@@ -1414,8 +1414,8 @@ include("header.php");
 									</h4>
 								</div>
 								<div class="col">
-									<h4 class="pro-skills">
-										<span data-lang="skills_pro_three">Creation of grids on flex according to the layout</span>
+									<h4 class="pro-skills" data-lang="skills_pro_three">
+										Creation of grids on flex according to the layout
 									</h4>
 								</div>
 								<div class="col">
@@ -1424,18 +1424,18 @@ include("header.php");
 									</h4>
 								</div>
 								<div class="col">
-									<h4 class="pro-skills">
-										<span data-lang="skills_pro_five">Layout of text content of pages</span>
+									<h4 class="pro-skills" data-lang="skills_pro_five">
+										Layout of text content of pages
 									</h4>
 								</div>
 								<div class="col">
-									<h4 class="pro-skills">
-										<span data-lang="skills_pro_six">Creation of layout on grid according to the layout</span>
+									<h4 class="pro-skills" data-lang="skills_pro_six">
+										Creation of layout on grid according to the layout
 									</h4>
 								</div>
 								<div class="col">
-									<h4 class="pro-skills">
-										<span data-lang="skills_pro_seven">Layout of navigation interface elements</span>
+									<h4 class="pro-skills" data-lang="skills_pro_seven">
+										Layout of navigation interface elements
 									</h4>
 								</div>
 								<div class="col">
@@ -1459,8 +1459,8 @@ include("header.php");
 									</h4>
 								</div>
 								<div class="col">
-									<h4 class="pro-skills">
-										<span data-lang="skills_pro_twelve">BEM component layout</span>
+									<h4 class="pro-skills" data-lang="skills_pro_twelve">
+										BEM component layout
 									</h4>
 								</div>
 								<div class="col">
