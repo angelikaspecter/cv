@@ -1,0 +1,55 @@
+/* ----- skills ----- */
+.sub-title {
+	@include h4;
+}
+.soft-skills,
+.hard-skills {
+	.soft-skills-item,
+	.hard-skills-item {
+		padding: 0.25em 0;
+		margin-bottom: 0.5em;
+		position: relative;
+		&:last-child {
+			margin-bottom: 0;
+			@media (max-width: 359px) {
+				margin-bottom: 1.5em;
+			}
+			@media (min-width: 360px) and (max-width: 991px) {
+				margin-bottom: 1.5em;
+			}
+		}
+		.skill-heading {
+			display: flex;
+			justify-content: space-between;
+			.soft-skills-title,
+			.hard-skills-title {
+				@include text;
+				font-weight: 400;
+			}
+			.text-disabled {
+				color: var(--secondary-color);
+			}
+		}
+		.line-progress {
+			width: 100%;
+			.progressbar-text {
+				width: 100%;
+				text-align: right;
+				top: -6px !important;
+				font-family: var(--secondary-font);
+				font-size: 0.8em;
+				color: var(--secondary-color) !important;
+			}
+		}
+	}
+}
+.pro-skills {
+	@include card;
+	padding: 2em;
+	@include text;
+	font-weight: 400;
+	text-align: left;
+	span {
+		color: var(--secondary-color);
+	}
+}

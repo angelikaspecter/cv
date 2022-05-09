@@ -1,0 +1,43 @@
+/* ----- footer ----- */
+footer {
+	width: 100%;
+	padding: 1.75em 2.5em 0.75em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background: var(--accident-secondary-bg);
+	box-shadow: var(--box-secondary-shadow);
+	font-size: 0.8em;
+	color: var(--secondary-color);
+	transition: var(--tr-lg);
+	z-index: 9;
+	@media (max-width: 359px) {
+		padding: 1.5em;
+	}
+	@media (min-width: 360px) and (max-width: 505px) {
+		padding: 1.5em;
+	}
+	& div {
+		@media (min-width: 506px) {
+			margin-bottom: 10px;
+		}
+	}
+	& a {
+		transition: var(--tr-md);
+		&:hover {
+			color: var(--main-color);
+		}
+	}
+	.copyright {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@media (max-width: 359px) {
+			& span {
+				width: 150px;
+			}
+		}
+	}
+}

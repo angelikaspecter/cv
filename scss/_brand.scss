@@ -1,0 +1,16 @@
+/* ----- brands ----- */
+.brand {
+	width: 120px;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+	opacity: 0.6;
+	transition: var(--tr-md);
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	margin: 2em auto;
+	&:hover {
+		filter: none;
+		opacity: 1;
+	}
+}

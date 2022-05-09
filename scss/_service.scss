@@ -1,0 +1,9 @@
+/* ----- services ----- */
+.service-content {
+	@include card;
+	text-align: center;
+
+	.service-title {
+		@include h3;
+	}
+}

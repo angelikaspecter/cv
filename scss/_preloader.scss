@@ -1,0 +1,45 @@
+/* ----- preloader ----- */
+.preloader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: var(--main-bg);
+	z-index: 999999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.preloader-content {
+		text-align: center;
+		.preloader-title {
+			font-family: var(--main-font);
+			font-size: 1.5em;
+			color: var(--main-color);
+			margin-bottom: 0;
+		}
+		.preloader-load {
+			width: 200px;
+			.progressbar-text {
+				position: relative;
+				font-size: 1em;
+				font-weight: 400 !important;
+				color: var(--secondary-color) !important;
+				height: 300px;
+				line-height: 325px;
+				font-family: var(--secondary-font);
+			}
+		}
+	}
+}
+.preloader-load {
+	path {
+		&:first-child {
+			stroke: var(--main-bg);
+		}
+		&:last-child {
+			stroke: var(--accident-color);
+		}
+	}
+}

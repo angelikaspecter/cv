@@ -1,0 +1,24 @@
+/* ----- about ----- */
+.about-box {
+	display: flex;
+	align-items: flex-start;
+	margin: 1.5em 0;
+	.nav {
+		display: flex;
+		flex-direction: column;
+		margin-right: 1.5em;
+		.nav-link {
+			@include pill;
+		}
+	}
+	.tab-content {
+		.tab-pane {
+			.hobbie-item {
+				display: flex;
+				align-items: center;
+				justify-content: start;
+				@include hobbie;
+			}
+		}
+	}
+}

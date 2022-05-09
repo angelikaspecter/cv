@@ -1,0 +1,89 @@
+/* ----- prices ----- */
+.price-card {
+	font-family: var(--main-font);
+	color: var(--main-color);
+	@include card;
+	.price-card-header {
+		margin-bottom: 0;
+		.price-header {
+			@include h3;
+		}
+		.price-desc {
+			@include text;
+			color: var(--secondary-color);
+		}
+	}
+	.price-list {
+		margin-top: 2em;
+		.nav {
+			display: flex;
+			justify-content: center;
+			.nav-item {
+				width: auto;
+				.nav-link {
+					@include pill;
+					width: 100%;
+					font-size: 0.85em;
+				}
+			}
+		}
+		.tab-content {
+			.tab-pane {
+				.price-number {
+					margin: 1em 0;
+					font-family: var(--main-font);
+					font-size: 2em;
+					font-weight: 600;
+					color: var(--accident-color);
+					position: relative;
+					.price-span {
+						position: absolute;
+						top: 0;
+						font-size: 0.5em;
+						color: var(--secondary-color);
+						font-weight: 300;
+					}
+				}
+				.deadline-panel {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin-bottom: 1em;
+					@media (max-width: 359px) {
+						flex-direction: column;
+					}
+					.deadline-title {
+						@include text;
+						margin-right: 1em;
+						word-wrap: nowrap;
+						@media (max-width: 359px) {
+							margin-right: 0;
+						}
+						&:last-child {
+							margin-right: 0;
+						}
+						.deadline-span {
+							@include text;
+							color: var(--accident-color);
+							margin-right: 0.25em;
+						}
+					}
+				}
+				.tool-list {
+					.tool-list-item {
+						@include text;
+						text-align: center;
+						margin-right: 1em;
+						& i {
+							color: var(--accident-color);
+							margin-right: 0.25em;
+						}
+						&.list-item-disabled {
+							color: var(--secondary-color);
+						}
+					}
+				}
+			}
+		}
+	}
+}

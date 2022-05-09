@@ -1,0 +1,85 @@
+/* ----- blog ----- */
+.blog-card {
+	position: relative;
+	overflow: hidden;
+	box-shadow: var(--box-shadow);
+	margin-bottom: 30px;
+
+	& .port-cover {
+		position: relative;
+		padding-bottom: 60%;
+		display: block;
+
+		& img {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			object-fit: cover;
+			object-position: center;
+			transition: var(--tr-md);
+		}
+	}
+
+	& .post-description {
+		background-color: var(--secondary-bg);
+		padding: 30px;
+		position: relative;
+		bottom: 0;
+	}
+
+	&:hover {
+		& .port-cover {
+			& img {
+				transform: scale(1.07);
+			}
+		}
+	}
+}
+.blog-slider {
+	& .blog-card {
+		margin-bottom: 0;
+	}
+}
+/* ----- pagination ----- */
+.pagination {
+	padding: 1.5em 1.5em 1.25em;
+	background: var(--secondary-bg);
+	display: flex;
+	justify-content: space-between;
+	box-shadow: var(--box-shadow);
+	.link-decolor {
+		transition: var(--tr-md);
+		padding: 0;
+		&.active-pag {
+			color: var(--accident-color);
+		}
+	}
+	.link {
+		position: relative;
+		i {
+			margin-left: 0.25em;
+			@media (min-width: 1400px) {
+				margin-bottom: 0.15em;
+			}
+		}
+		&:hover {
+			& i {
+				padding-left: 0.25em;
+				transition: 0.4s ease-in-out;
+			}
+		}
+	}
+	.link-left {
+		position: relative;
+		i {
+			margin-right: 0.25em;
+		}
+		&:hover {
+			& i {
+				padding-left: 0;
+				padding-right: 0.25em;
+				transition: 0.4s ease-in-out;
+			}
+		}
+	}
+}
