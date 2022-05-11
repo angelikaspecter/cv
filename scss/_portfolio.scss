@@ -1,4 +1,4 @@
-/* ----- filter ----- */
+/* ---------- filter --------- */
 .filter-box {
 	@media (max-width: 359px) {
 		display: flex;
@@ -132,4 +132,8 @@
 			}
 		}
 	}
+}
+/* --------- btn-back -------- */
+.btn-link {
+	padding-left: 0;
 }

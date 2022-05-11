@@ -14,7 +14,7 @@
 }
 .banner {
 	transition: var(--tr-lg);
-	background: url("../img/bg.jpg") no-repeat 50% 50%;
+	background: url("../img/bg.webp") no-repeat 50% 50%;
 	background-size: cover;
 	position: relative;
 	box-shadow: var(--box-shadow);
@@ -41,6 +41,12 @@
 				@include code;
 			}
 			.cv-btns {
+				.btn {
+					@include btn;
+				}
+				.nav-tabs {
+					border: none;
+				}
 				.btn-link {
 					@include btn-link;
 				}

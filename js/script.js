@@ -430,115 +430,6 @@ $(function () {
 	});
 
 	bar.animate(.27);
-
-	// slider works
-	var swiper = new Swiper('.works-slider', {
-		slidesPerView: 3,
-		spaceBetween: 30,
-		speed: 1400,
-		autoplay: {
-			delay: 4000,
-		},
-		autoplaySpeed: 5000,
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-		},
-		navigation: {
-			nextEl: '.works-swiper-next',
-			prevEl: '.works-swiper-prev',
-		},
-		breakpoints: {
-			1500: {
-				slidesPerView: 2,
-			},
-			1200: {
-				slidesPerView: 2,
-			},
-			992: {
-				slidesPerView: 1,
-			},
-		},
-	});
-
-	// slider blog
-	var swiper = new Swiper('.blog-slider', {
-		slidesPerView: 3,
-		spaceBetween: 30,
-		speed: 1400,
-		autoplay: {
-			delay: 4000,
-		},
-		autoplaySpeed: 5000,
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-		},
-		navigation: {
-			nextEl: '.blog-swiper-next',
-			prevEl: '.blog-swiper-prev',
-		},
-		breakpoints: {
-			1500: {
-				slidesPerView: 3,
-			},
-			1200: {
-				slidesPerView: 2,
-			},
-			992: {
-				slidesPerView: 1,
-			},
-		},
-	});
-
-	$('[data-fancybox="avatar"]').fancybox({
-		animationEffect: "zoom-in-out",
-		animationDuration: 600,
-		transitionDuration: 1200,
-		buttons: [
-			"zoom",
-			"close"
-		],
-	});
-
-	$('[data-fancybox="gallery"]').fancybox({
-		animationEffect: "zoom-in-out",
-		animationDuration: 600,
-		transitionDuration: 1200,
-		buttons: [
-			"zoom",
-			"share",
-			"slideShow",
-			"thumbs",
-			"close"
-		],
-	});
-
-	$('[data-fancybox="diplome"]').fancybox({
-		animationEffect: "zoom-in-out",
-		animationDuration: 600,
-		transitionDuration: 1200,
-		buttons: [
-			"zoom",
-			"slideShow",
-			"thumbs",
-			"close",
-		],
-	});
-
-	$('[data-fancybox="recommendation"]').fancybox({
-		animationEffect: "zoom-in-out",
-		animationDuration: 600,
-		transitionDuration: 1200,
-		buttons: [
-			"zoom",
-			"slideShow",
-			"thumbs",
-			"close",
-		],
-	});
-
-	$.fancybox.defaults.hash = false;
 });
 
 // age
@@ -693,12 +584,7 @@ $(".language-switcher").on("click", function (e) {
 	}
 });
 
-// Scroll to Portfolio
-var hiddenElement = document.getElementById("portfolio");
-var btn = document.querySelector('#btn-portfolio');
-
-function handleButtonClick() {
-	hiddenElement.scrollIntoView({ block: "center", behavior: "smooth" });
-}
-
-btn.addEventListener('click', handleButtonClick);
+$(".cv-btns .btn").on("click", function () {
+	$('.main-menu .nav-link').removeClass('active');
+	$('.main-menu #portfolio-tab').toggleClass('active');
+});
