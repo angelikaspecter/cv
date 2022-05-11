@@ -587,4 +587,6 @@ $(".language-switcher").on("click", function (e) {
 $(".cv-btns .btn").on("click", function () {
 	$('.main-menu .nav-link').removeClass('active');
 	$('.main-menu #portfolio-tab').toggleClass('active');
+	$('.tab-content .tab-pane').removeClass('active show');
+	$('.tab-content .tab-pane#portfolio').toggleClass('active show');
 });
