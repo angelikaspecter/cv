@@ -449,33 +449,33 @@ if (today < dobnow) {
 $("#age").text(age);
 
 // Year Experience
-let startExp = new Date(2021, 1, 15); //Дата начала
-let yearExp = today.getFullYear() - startExp.getFullYear();
-let monthExp = today.getMonth() - startExp.getMonth();
+let startExp = {
+	year: 2021,
+	month: 2, //february
+	day: 15
+};
 
-if (today < dobnow) {
-	yearExp = yearExp - 1;
-}
+let date = new Date();
+let yearExp = date.getFullYear() - startExp.year;
+let monthExp = date.getMonth() - startExp.month;
+let dayExp = date.getDate();
 
-for (let i = 0; i < monthExp; i++) {
-	if (monthExp === 12) {
+function dayIntoMonth(day) {
+	if (day === startExp.day && monthExp + 1 === startExp.month) {
 		monthExp = 0;
-		yearExp = today.getFullYear() - startExp.getFullYear();
-	} else if ((today.getMonth() && today.getDate()) === (startExp.getMonth() && startExp.getDate())) {
-		monthExp;
-		yearExp = today.getFullYear() - startExp.getFullYear();
-	} else {
-		monthExp = (today.getMonth() - startExp.getMonth()) - 1;
-		yearExp = today.getFullYear() - startExp.getFullYear();
+		yearExp += 1 - 1;
+	} else if ((day === startExp.day) || (day === 31 && (monthExp === 0 || monthExp === 2 || monthExp === 4 || monthExp === 6 || monthExp === 7 || monthExp === 9 || monthExp === 11)) || (day === 30 && (monthExp === 3 || monthExp === 5 || monthExp === 8 || monthExp === 10)) || (day === 28 && monthExp === 1) || (day === 29 && monthExp === 1)) {
+		monthExp += 1;
 	}
 }
+dayIntoMonth(dayExp);
 
 $("#year").text(yearExp);
 $("#month").text(monthExp);
 
 // Banner text
 var typed = new Typed('#cv-code-text', {
-	strings: [" HTML/CSS/JS/PHP", " WordPress/Elementor"],
+	strings: [" HTML/CSS/JS", " WordPress/Elementor"],
 	typeSpeed: 110, // скорость набора
 	backSpeed: 50, // скорость удаления текста
 	startDelay: 0, // изначальная задержка перед набором
