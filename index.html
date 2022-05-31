@@ -287,6 +287,13 @@
 								</button>
 							</li>
 							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="laborotory-tab" data-bs-toggle="tab"
+									data-bs-target="#laborotory" type="button" role="tab" aria-controls="laborotory"
+									aria-selected="false">
+									<i class="fas fa-cogs"></i>
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
 								<!-- language change -->
 								<div class="nav-link language-change">
 									<!-- language item -->
@@ -2349,6 +2356,192 @@
 									</div>
 									<div class="tab-pane fade" id="portfolio" role="tabpanel"
 										aria-labelledby="portfolio-tab">
+										<!-- container -->
+										<div class="container-fluid px-0 mb-5">
+											<!-- section title -->
+											<h2 class="section-title mt-4" data-lang="portfolio_title">My works</h2>
+											<!-- section title end -->
+											<!-- row -->
+											<div class="row row-cols-1">
+												<!-- col -->
+												<div class="col filter-box">
+													<!-- filter -->
+													<div class="filter filter-left" id="filter">
+														<!-- filter link -->
+														<button class="btn-link active" onclick="filterSelection('all')"
+															data-lang="portfolio_filter_all">All Categories</button>
+														<!-- filter link -->
+														<button class="btn-link" onclick="filterSelection('blog')"
+															data-lang="portfolio_filter_blog">Blog</button>
+														<!-- filter link -->
+														<button class="btn-link" onclick="filterSelection('cataloge')"
+															data-lang="portfolio_filter_cataloge">Cataloge</button>
+														<!-- filter link -->
+														<button class="btn-link" onclick="filterSelection('corporate')"
+															data-lang="portfolio_filter_corporate">Corporate</button>
+														<!-- filter link -->
+														<button class="btn-link" onclick="filterSelection('event')"
+															data-lang="portfolio_filter_event">Event</button>
+														<!-- filter link -->
+														<button class="btn-link" onclick="filterSelection('info')"
+															data-lang="portfolio_filter_info">Info</button>
+														<!-- filter link -->
+														<button class="btn-link"
+															onclick="filterSelection('landing-page')"
+															data-lang="portfolio_filter_lp">Landing Page</button>
+														<!-- filter link -->
+														<button class="btn-link" onclick="filterSelection('service')"
+															data-lang="portfolio_filter_service">Service</button>
+														<!-- filter link -->
+														<button class="btn-link" onclick="filterSelection('site')"
+															data-lang="portfolio_filter_site">Site</button>
+														<!-- filter link -->
+														<button class="btn-link" onclick="filterSelection('store')"
+															data-lang="portfolio_filter_store">Store</button>
+														<!-- filter link -->
+														<button class="btn-link"
+															onclick="filterSelection('admin-panel')"
+															data-lang="portfolio_filter_panel">Admin Panel</button>
+													</div>
+													<!-- filter end -->
+													<!-- filter -->
+													<div class="filter filter-right" id="filter">
+														<!-- filter link -->
+														<button class="btn-link"
+															onclick="filterSelection('html-css')">HTML/CSS</button>
+														<!-- filter link -->
+														<button class="btn-link"
+															onclick="filterSelection('bootstrap')">Bootstrap</button>
+														<!-- filter link -->
+														<button class="btn-link"
+															onclick="filterSelection('word-press')">WordPress</button>
+													</div>
+													<!-- filter end -->
+												</div>
+												<!-- col end -->
+												<div class="col portfolio-box mt-3">
+													<div
+														class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3 portfolio-gallery">
+														<div class="col filter html-css landing-page">
+															<div class="portfolio-gallery-item">
+																<div class="card">
+																	<a href="https://angelikaspecter.github.io/Instabot"
+																		target="_blank">
+																		<img class="p-5" src="img/logo/instabot.svg"
+																			width="95" height="15" alt="Instabot">
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="col filter bootstrap landing-page">
+															<div class="portfolio-gallery-item">
+																<div class="card">
+																	<a href="https://angelikaspecter.github.io/JuliaVorman/"
+																		target="_blank">
+																		<img class="p-5" src="img/logo/JuliaVorman.svg"
+																			width="95" height="15" alt="Julia Vorman">
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="col filter bootstrap admin-panel">
+															<div class="portfolio-gallery-item">
+																<div class="card">
+																	<a href="https://angelikaspecter.github.io/Academ-Journal/"
+																		target="_blank">
+																		<i class="bi bi-mortarboard me-2"></i> Academ
+																		Journal
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="col filter bootstrap info">
+															<div class="portfolio-gallery-item">
+																<div class="card">
+																	<a href="https://angelikaspecter.github.io/BinanceAcademy/"
+																		target="_blank">
+																		<img class="p-5" src="img/logo/Binance.webp"
+																			width="95" height="15" alt="Binance">
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="col filter bootstrap info">
+															<div class="portfolio-gallery-item">
+																<div class="card">
+																	<a href="https://angelikaspecter.github.io/Binance/"
+																		target="_blank">
+																		<img class="p-5" src="img/logo/Binance.webp"
+																			width="95" height="15" alt="Binance">
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="col filter bootstrap landing-page">
+															<div class="portfolio-gallery-item">
+																<div class="card">
+																	<a href="https://angelikaspecter.github.io/GosInvest/"
+																		target="_blank">
+																		<img class="p-5" src="img/logo/logo-invest.svg"
+																			width="95" height="15" alt="GosInvest">
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="col filter bootstrap landing-page">
+															<div class="portfolio-gallery-item">
+																<div class="card">
+																	<a href="https://angelikaspecter.github.io/Tinkoff/"
+																		target="_blank">
+																		<img class="p-5" src="img/logo/Tinkoff.svg"
+																			width="95" height="15" alt="Tinkoff">
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="col filter bootstrap admin-panel">
+															<div class="portfolio-gallery-item">
+																<div class="card">
+																	<a href="https://angelikaspecter.github.io/AffDash/"
+																		target="_blank">
+																		<i class="bi bi-bar-chart-steps me-2"></i>
+																		Dashbord
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="col filter bootstrap landing-page">
+															<div class="portfolio-gallery-item">
+																<div class="card">
+																	<a href="https://angelikaspecter.github.io/Novateck/"
+																		target="_blank">
+																		<img class="p-5" src="img/logo/novateck.svg"
+																			width="95" height="15" alt="Novateck">
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="col filter bootstrap info">
+															<div class="portfolio-gallery-item">
+																<div class="card">
+																	<a href="https://angelikaspecter.github.io/Alfa-Investment/"
+																		target="_blank">
+																		<img class="p-5" src="img/logo/alfa.png"
+																			width="95" height="15"
+																			alt="Alfa Investment">
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- row end -->
+										</div>
+										<!-- container end -->
+									</div>
+									<div class="tab-pane fade" id="laborotory" role="tabpanel"
+										aria-labelledby="laborotory-tab">
 										<!-- container -->
 										<div class="container-fluid px-0 mb-5">
 											<!-- section title -->
